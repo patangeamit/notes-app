@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  max-width: 250px;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: bisque;
+  box-shadow:rgba(0,0,0,.1) 0px 4px 12px;
+  justify-content: space-between;
+  transition: 100ms ease-out;
+}
+.note:hover{
+  box-shadow:rgba(0,0,0,.3) 0px 4px 12px;
+}
+
+.delete-icon:hover{
+  cursor: pointer;
+  color: #505050;}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+}
+
+.container{
+  height: 100ch;
+  margin-right: auto;
+  margin-left:auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 960px;
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: medium;
+  padding: 0;
+  margin: 0;
+}
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.dark-mode .save{
+  background-color: #292929;
+  color:rgb(232, 232, 232)
+}
+
+.dark-mode .save:hover{
+  background-color: #454545;
+} 
+h4{
+  color:#454545;
+}
+.dark-mode h4{
+  color:#e1e1e1
+}
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  align-content: center;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(232, 232, 232);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+  
+  box-shadow:rgba(0,0,0,.1) 0px 4px 12px;
+  transition: 100ms ease-out;
+}
+.search:hover{
+  box-shadow:rgba(0,0,0,.2) 0px 4px 12px;
+}
+
+.search input {
+	border: none;
+	background-color: rgba(233, 233, 233, 0);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+.dark-mode .container{
+  background-color: rgb(29, 29, 29);
+}
+.dark-mode {
+  background-color: rgb(29, 29, 29);
+
+}
+
+.dark-mode h1 {
+	color: white;
+}
+
+.dark-mode .search  {
+  background-color: rgb(58, 58, 58);
+}
+
+.dark-mode .search input{
+  color: #e1e1e1;
+}
